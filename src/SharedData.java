@@ -14,6 +14,7 @@ public class SharedData
 	public boolean[] getWinArray() 
 	{
 		return winArray;
+		//return the array 
 	}
 
 	public void setWinArray(boolean [] winArray) 
