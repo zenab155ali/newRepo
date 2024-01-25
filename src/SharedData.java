@@ -20,6 +20,7 @@ public class SharedData
 	public void setWinArray(boolean [] winArray) 
 	{
 		this.winArray = winArray;
+		//hhh
 	}
 
 	public int[] getArray() 
