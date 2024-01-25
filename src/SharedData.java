@@ -1,45 +1,39 @@
-public class SharedData 
-{
-	private int [] array;
-	private boolean [] winArray;
-	private boolean flag;
-	private final int b;
-	
-	public SharedData(int[] array, int b) {
-		
-		this.array = array;
-		this.b = b;
-	}
+public class SharedData {
+    private Integer[] array; // Changed int[] to Integer[]
+    private boolean[] winArray;
+    private boolean flag;
+    private final int b;
 
-	public boolean[] getWinArray() 
-	{
-		return winArray;
-		//return the array 
-	}
+    public SharedData(int[] array, int b) {
+        // Convert int[] to Integer[] and initialize
+        this.array = new Integer[array.length];
+        for (int i = 0; i < array.length; i++) {
+            this.array[i] = array[i]; // Autoboxing
+        }
+        this.b = b;
+    }
 
-	public void setWinArray(boolean [] winArray) 
-	{
-		this.winArray = winArray;
-		//hhh
-	}
+    public boolean[] getWinArray() {
+        return winArray;
+    }
 
-	public int[] getArray() 
-	{
-		return array;
-	}
+    public void setWinArray(boolean[] winArray) {
+        this.winArray = winArray;
+    }
 
-	public int getB() 
-	{
-		return b;
-	}
+    public Integer[] getArray() { // Changed return type to Integer[]
+        return array;
+    }
 
-	public boolean getFlag() 
-	{
-		return flag;
-	}
+    public int getB() {
+        return b;
+    }
 
-	public void setFlag(boolean flag) {
-		this.flag = flag;
-	}
+    public boolean getFlag() {
+        return flag;
+    }
 
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
 }
